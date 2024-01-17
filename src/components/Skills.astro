@@ -1,0 +1,179 @@
+---
+import "animate.css";
+import "../css/animationDuration.css";
+
+const skillCards = [
+	// {
+	// 	icon: "https://api.iconify.design/logos:figma.svg",
+	// 	animation: "card animate__animated animate__fadeInUp delay-1",
+	// 	title: "Figma",
+	// 	alt: "figma logo",
+	// },
+	{
+		icon: "https://api.iconify.design/vscode-icons:file-type-reactjs.svg ",
+		animation: "card animate__animated animate__fadeInUp delay-1",
+		title: "React",
+		alt: "React logo",
+	},
+
+	{
+		icon: "https://api.iconify.design/logos:javascript.svg",
+		animation: "card animate__animated animate__fadeInUp delay-2",
+		title: "Javascript",
+		alt: "JavaScript logo",
+	},
+
+	{
+		icon: "https://api.iconify.design/logos:git.svg",
+		animation: "card animate__animated animate__fadeInUp delay-3",
+		title: "Git",
+		alt: "git logo",
+	},
+
+	{
+		icon: "https://www.cdnlogo.com/logos/t/58/tailwindcss.svg",
+		//icon: "https://api.iconify.design/logos:tailwindcss.svg",
+		animation: "card animate__animated animate__fadeInUp delay-4",
+		title: "TailwindCSS",
+		alt: "tailwindCSS logo",
+	},
+
+	{
+		icon: "https://api.iconify.design/logos:terminal.svg",
+		animation: "card animate__animated animate__fadeInUp delay-5",
+		title: "Terminal",
+		alt: "Terminal logo",
+	},
+
+	// {
+	// 	icon: "https://api.iconify.design/logos:sass.svg",
+	// 	animation: "card animate__animated animate__fadeInUp delay-6",
+	// 	title: "SASS",
+	// 	alt: "SASS logo",
+	// },
+
+	// {
+	// 	icon: "https://api.iconify.design/logos:astro.svg",
+	// 	animation: "card animate__animated animate__fadeInUp delay-6",
+	// 	title: "Astro",
+	// 	alt: "Astro logo",
+	// },
+
+	{
+		icon: "https://api.iconify.design/logos:firebase.svg",
+		animation: "card animate__animated animate__fadeInUp delay-6",
+		title: "Firebase",
+		alt: "firebase logo",
+	},
+];
+---
+
+<style>
+
+	/*SKILL SECTION STYLES*/
+
+	.skills-section {
+		position: relative;
+		background-color: var(--light-green-color);
+	}
+
+	.skills-section.dark {
+		background-color: var(--dark-green-color);
+	}
+
+	@media (max-width: 800px) {
+		.skills-section {
+			padding: 4rem 1rem;
+		}
+	}
+
+	.skills-section h2 {
+		font-family: "Inter", sans-serif;
+		--animate-duration: 6s;
+		color: var(--light-grey-color);
+		font-size: var(--fs-section-mobile);
+		font-weight: 700;
+		text-align: center;
+	}
+	.skills-section h2.dark {
+		background-color: transparent;
+		color: #d1d1d1;
+	}
+	@media (min-width: 800px) {
+		.skills-section h2 {
+			font-size: var(--fs-large);
+			padding-bottom: 3rem;
+		}
+	}
+
+	/* SKILLS SECTION STYLES*/
+	.skills-section .card-container {
+		display: grid;
+		padding-top: 3rem;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(1, 1fr);
+		grid-column-gap: 3rem;
+		grid-row-gap: 0px;
+	}
+
+	@media (max-width: 600px) {
+		.skills-section .card-container {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: repeat(3, 1fr);
+			grid-column-gap: 20px;
+			grid-row-gap: 0px;
+		}
+	}
+	.card {
+		text-align: center;
+		border-radius: 16px;
+		padding: 0.8rem;
+		margin: 2rem 0;
+		background-color: var(--light-grey-color);
+		box-shadow:
+			0 1px 3px rgba(0, 0, 0, 0.12),
+			0 1px 2px rgba(0, 0, 0, 0.24);
+	}
+
+	 .card.dark {
+		 background: var(--darker-green-color);
+		 color: var(--light-grey-color);
+	} 
+
+	.skills-section .card-container .card img {
+		text-align: center;
+		margin: 0 auto;
+		color: #9ea3e7;
+		width: 100px;
+		height: 100px;
+	}
+
+	.skills-section .card-container .card h3 {
+		padding-top: 10px;
+		font-family: "Inter", sans-serif;
+		font-size: var(--fs-semi-medium);
+	}
+
+	@media (max-width: 600px) {
+		.skills-section .card-container .card h3 {
+			font-size: var(--fs-default);
+		}
+	}
+</style>
+
+<section class="skills-section section-padding" id="skills">
+	<h2 class="skills-heading animate__animated animate__fadeInUp">
+		SKILLS & TECH
+	</h2>
+	<div class="card-container">
+		{
+			skillCards.map((skillCard) => (
+				<div class={skillCard.animation} id="card">
+					<img src={skillCard.icon} alt={skillCard.alt} />
+					<h3>{skillCard.title}</h3>
+				</div>
+			))
+		}
+	</div>
+</section>

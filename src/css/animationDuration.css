@@ -1,0 +1,24 @@
+/*ANIMATION STYLES FOR SKILL CARDS*/
+.animate__animated.animate__fadeInUp.delay-1 {
+	--animate-duration: 2s;
+}
+
+.animate__animated.animate__fadeInUp.delay-2 {
+	--animate-duration: 2.5s;
+}
+
+.animate__animated.animate__fadeInUp.delay-3 {
+	--animate-duration: 3s;
+}
+
+.animate__animated.animate__fadeInUp.delay-4 {
+	--animate-duration: 3.5s;
+}
+
+.animate__animated.animate__fadeInUp.delay-5 {
+	--animate-duration: 4s;
+}
+
+.animate__animated.animate__fadeInUp.delay-6 {
+	--animate-duration: 4.5s;
+}

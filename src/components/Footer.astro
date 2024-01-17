@@ -1,0 +1,43 @@
+---
+const { scrollToTop } = Astro.props;
+---
+
+<footer
+	class="footer tagline bg-[#1a113d] flex flex-col justify-center"
+	id="footer"
+>
+	<div class="footer-attributes text-[#d4d4d4] py-2 text-center">
+		<nav>
+			<a
+				href={scrollToTop}
+				class="lg:text-xl xs:text-lg sm:text-xs md:text-lg font-extrabold text-grey-700 underline"
+				>Return to top</a
+			>
+		</nav>
+		<small
+			class="text-center xs:text-center lg:text-xl xs:text-lg sm:text-xs md:text-lg"
+			>&copy; 2022 - Today. Made with <span class="text-bold"
+				>Astro + TailwindCSS + React
+			</span>
+		</small>
+		<br />
+		<small
+			class="text-center xs:text-center lg:text-xl xs:text-xs sm:text-xs md:text-xl"
+		>
+			Designed and built by <a
+				class="underline"
+				href="https://twitter.com/iamthebuilder__">The Builder</a
+			>
+		</small>
+	</div>
+</footer>
+
+<style>
+	body {
+		font-family: "Inter", sans-serif;
+	}
+
+	.dark {
+		background-color: var(--darker-green-color);
+	}
+</style>

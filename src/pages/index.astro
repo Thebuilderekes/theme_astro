@@ -1,0 +1,24 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HeroSection from "../components/HeroSection.astro";
+import Portfolio from "../components/Portfolio.astro";
+import Skills from "../components/Skills.astro";
+import "../css/index.css";
+
+const title = "Jonathan Builds - Frontend web developer";
+const description =
+	"Jonathan Builds is a frontend web developer who specializes in creating quality high converting websites. He is currently open for hire. ";
+const author = "Jonathan Builds";
+const scrollToTop = "#top-page";
+---
+
+<BaseLayout
+	title={title}
+	description={description}
+	author={author}
+	scrollToTop={scrollToTop}
+>
+	<HeroSection />
+	<Skills />
+	<Portfolio />
+</BaseLayout>

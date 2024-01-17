@@ -1,0 +1,202 @@
+<style>
+	/*mobile view*/
+	.hero-section {
+		padding: 15% 2rem;
+		display: flex;
+		height: 100vh;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.hero-section.dark {
+		background-color: var(--darker-green-color);
+	}
+
+	/*desktop view*/
+	@media (max-width: 1200px) {
+		.hero-section {
+			padding: 50% 2rem;
+		}
+	}
+
+	@media (min-width: 900px) {
+		.hero-section {
+			align-items: center;
+			gap: 1.5rem;
+			text-align: center;
+		}
+	}
+
+	@media (max-width: 950px) {
+		.hero-section {
+			align-items: center;
+
+			padding: 45% 2rem;
+		}
+	}
+
+	@media (max-width: 899px) {
+		.hero-section {
+			text-align: center;
+			padding: 50% 5rem;
+		}
+	}
+
+	/* mobile view*/
+	@media (max-width: 550px) {
+		.hero-section {
+			padding: 25% 2rem;
+			align-items: start;
+			text-align: left;
+		}
+	}
+
+	.hero-section-main-heading {
+		color: var(--dark-green-color);
+		font-size: var(--fs-text-mobile);
+		font-weight: 600;
+		font-family: "Inter", sans-serif;
+		display: flex;
+	}
+
+	.hero-section-main-heading.dark {
+		color: var(--light-grey-color);
+	}
+
+	h1.animate__animated.animate__fadeIn {
+		--animate-duration: 3s;
+	}
+
+	h2 {
+		padding-bottom: 0.8rem;
+		font-size: var(--fs-extralarge);
+		font-weight: 500;
+		color: var(--mid-dark-green-color);
+		background-color: transparent;
+		font-family: "Inter", sans-serif;
+		font-weight: 700;
+
+		line-height: 1.2;
+		--animate-duration: 2s;
+	}
+
+	@media (max-width: 800px) {
+		h2 {
+			font-size: var(--fs-large);
+			font-weight: 800;
+		}
+	}
+
+	/* mobile view*/
+	@media (max-width: 500px) {
+		h2 {
+			font-size: var(--fs-semi-large);
+		}
+	}
+
+	.hero-section p {
+		text-align: left;
+		line-height: 1.5;
+		font-size: var(--fs-semi-medium);
+		max-width: 50%;
+		margin-bottom: 20px;
+		color: #272727;
+		font-family: "Inter", sans-serif;
+	}
+
+	@media (max-width: 900px) {
+		.hero-section p {
+			max-width: 80%;
+		}
+	}
+
+	/* mobile view*/
+	@media (max-width: 500px) {
+		.hero-section p {
+			font-size: var(--fs-p-mobile);
+			max-width: 100%;
+		}
+	}
+
+	.hero-section .cta {
+		display: flex;
+		gap: 2rem;
+	}
+
+	.hero-section .cta a {
+		text-transform: uppercase;
+		text-decoration: none;
+		text-align: center;
+		display: inline;
+		padding: 20px;
+		background: var(--accent-color);
+		color: #ffffff;
+		border-radius: 20px;
+		font-family: "Inter", sans-serif;
+		font-size: var(--fs-semi-medium);
+		font-weight: 900;
+		transition: 1s all ease;
+	}
+
+	/* mobile view*/
+	@media (max-width: 600px) {
+		.hero-section .cta a {
+			padding: 15px;
+			font-size: 1rem;
+			/* padding: 10px 5px; */
+		}
+	}
+
+	@media (max-width: 375px) {
+		.hero-section .cta a {
+			font-size: 0.9rem;
+			/* padding: 10px 5px; */
+		}
+	}
+	.hero-section .cta a:hover {
+		background: var(--dark-green-color);
+	}
+
+	.hero-section a:hover {
+		background-color: var(--accent-color);
+	}
+
+	/* dark mode styles */
+
+	.hero-section h2.dark {
+		color: #d1d1d1;
+	}
+
+	.hero-section p.dark {
+		color: #d1d1d1;
+	}
+</style>
+
+<section class="light-background hero-section" id="top-page">
+	<h1
+		class="heading animate__animated animate__fadeIn hero-section-main-heading"
+	>
+		Hi, I'm Jonathan Builds
+	</h1>
+	<h2 class="animate__animated animate__fadeInUp animate__faster job-title">
+		Front-end developer
+	</h2>
+	<p
+		class="animate__animated animate__fadeInUp animate__faster specialty-paragraph"
+	>
+		I design and develop websites that are beautiful and easy to use. Lorem
+		ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices velit
+		quis neque condimentum sodales. Cras dignissim cursus est, at egestas ex
+		convallis ut. Duis imperdiet metus libero, id gravida erat sagittis ac.
+	</p>
+	<div class="cta">
+		<a
+			class="portfolio-btn animate__animated animate__fadeInUp animate__faster"
+			href="#portfolio">View portfolio</a
+		>
+		<a
+			class="about-me-btn animate__animated animate__fadeInUp animate__faster"
+			href="../about">About me</a
+		>
+	</div>
+</section>

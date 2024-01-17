@@ -1,0 +1,255 @@
+---
+import "../components/ThemeToggle.astro";
+
+const portfolioCards = [
+	{
+		imgUrl: "https://picsum.photos/400/300",
+		technology: " CSS, React, styled components",
+		description:
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .",
+		animation: " card animate__animated animate__fadeInUp",
+		alt: "screenshot of musician landing page website",
+
+		webUrl: "#",
+		gitUrl: "https://github.com/",
+	},
+
+	{
+		imgUrl: "https://picsum.photos/400/300",
+		technology: " CSS, Javascript",
+		description:
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+		alt: " screenshot of resume-style web site",
+
+		animation: " card animate__animated animate__fadeInUp",
+		webUrl: "#",
+		gitUrl: "https://github.com",
+	},
+
+	{
+		imgUrl: "https://picsum.photos/400/300",
+		technology: " TailwindCSS, Javascript",
+		description:
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+		alt: " screenshot of web site",
+
+		animation: "card animate__animated animate__fadeInUp",
+		webUrl: "#",
+		gitUrl: "https://github.com/Thebuilderekes/kombo",
+	},
+
+	{
+		imgUrl: "https://picsum.photos/400/300",
+		technology: " CSS, Bootstrap, Javascript",
+		description:
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+			alt: " screenshot of web site",
+		animation: " card animate__animated animate__fadeInUp",
+		webUrl: "https://jewelrystore.vercel.app/",
+		gitUrl: "https://github.com/",
+	},
+
+	{
+		imgUrl: "https://picsum.photos/400/300",
+		technology: "CSS, Javascript",
+		description:
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+		animation: " card animate__animated animate__fadeInUp",
+		alt: " screenshot of web site",
+		webUrl: "#",
+		gitUrl: "https://github.com/",
+	},
+
+	{
+		imgUrl: "https://picsum.photos/400/300",
+		technology: " CSS, Javascript",
+		description:
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+			alt: " screenshot of web site",
+		animation: "card animate__animated animate__fadeInUp",
+		webUrl: "#",
+		gitUrl: "https://github.com/",
+	},
+];
+---
+
+<style>
+
+	/* PORTFOLIO SECTION STYLES*/
+
+	.portfolio-section {
+		font-family: "Inter", sans-serif;
+		/* position: relative; */
+		background-color: var(--dark-grey-color);
+	}
+
+	.portfolio-section.dark {
+		background-color: var(--darker-green-color);
+	}
+	@media (max-width: 800px) {
+		.portfolio-section {
+			padding: 4.5rem 1rem;
+		}
+	}
+
+	h2 {
+		font-size: var(--fs-section-mobile);
+		font-weight: 700;
+		color: var(--darker-green-color);
+		text-align: center;
+	}
+
+	.portfolio-heading.dark {
+		color: var(--light-grey-color);
+	}
+
+	@media (min-width: 800px) {
+		.portfolio-section h2 {
+			font-size: var(--fs-semi-large);
+			padding-bottom: 3rem;
+			font-size: var(--fs-large);
+		}
+	}
+
+	/* PORTFOLIO CARD STYLES*/
+	.portfolio-section .card-container {
+		padding: 3rem 0;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, minmax(0, 1fr));
+		grid-column-gap: 5rem;
+		grid-row-gap: 5rem;
+	}
+
+	.card {
+		color: #090329;
+		padding: 1rem;
+		background-color: var(--light-grey-color);
+		border-top-right-radius: 24px;
+		border-top-left-radius: 24px;
+		box-shadow:
+			0 1px 3px rgba(0, 0, 0, 0.12),
+			0 1px 2px rgba(0, 0, 0, 0.24);
+	}
+
+	
+	 .card.dark {
+		 background: var(--dark-green-color);
+		 color: var(--light-grey-color); 
+	} 
+
+	.animate__animated.animate__fadeInUp {
+		--animate-duration: 2s;
+	}
+
+	@media (max-width: 900px) {
+		.portfolio-section .card-container .card {
+			width: 100%;
+		}
+	}
+
+	.portfolio-section .card-container .card figure {
+		position: relative;
+		z-index: 10;
+		width: 100%;
+	}
+
+	.portfolio-section .card-container .card figure img {
+		border-top-right-radius: 16px;
+		border-top-left-radius: 16px;
+		width: 100%;
+	}
+
+	.card p {
+		font-size: var(--fs-semi-medium);
+		text-align: left;
+		padding: 0.9rem 0;
+
+		line-height: 1.5;
+	}
+
+	@media (max-width: 600px) {
+		.portfolio-section .card-container .card p {
+			font-size: var(--fs-default);
+		}
+	}
+	.portfolio-section .card-container .card p span {
+		font-weight: 900;
+	}
+
+	.portfolio-section .btn-group {
+		display: flex;
+	}
+
+	.portfolio-section  a {
+		font-weight: 600;
+		padding: 5px 10px;
+		text-decoration: none;
+		font-size: var(--fs-semi-medium);
+		background-color: var(--darker-green-color);
+		border: 1px solid transparent;
+		color: #ffffff;
+		border-radius: 10px;
+	}
+	.portfolio-section  a:hover {
+		background-color: var(--light-grey-color);
+		color: var(--accent-color);
+		border-color: var(--accent-color);
+	}
+
+	@media (max-width: 900px) {
+		.portfolio-section  a {
+			font-size: 1rem;
+		}
+	}
+
+	.portfolio-section .card-container .card .btn-group .github-btn {
+		margin-left: 15px;
+	}
+	.portfolio-section .card-container .card a:hover,
+	a:focus {
+		color: #0a1926;
+		background-color: #ffffff;
+	}
+
+	@media (max-width: 950px) {
+		.portfolio-section .card-container {
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: repeat(6, 1fr);
+			grid-row-gap: 50px;
+		}
+	}
+</style>
+
+<section class="portfolio-section section-padding" id="portfolio">
+	<h2 class="portfolio-heading">PORTFOLIO</h2>
+	<div class="card-container">
+		{
+			portfolioCards.map((portfolioCard) => (
+				<div class={portfolioCard.animation} id="card">
+					<figure>
+						<img src={portfolioCard.imgUrl} alt={portfolioCard.alt} />
+					</figure>
+					<p>{portfolioCard.description}</p>
+					<p>
+						<span>Technologies:</span> {portfolioCard.technology}
+					</p>
+					<div class="btn-group">
+						<a href={portfolioCard.webUrl} target="_blank" role="link">
+							VISIT WEBSITE
+						</a>
+						<a
+							class="github-btn"
+							href="javascript:void(0)"
+							aria-disabled="true"
+							role="link"
+						>
+							GITHUB
+						</a>
+					</div>
+				</div>
+			))
+		}
+	</div>
+</section>
