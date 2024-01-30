@@ -15,7 +15,7 @@ const { title, description, author, form, scrollToTop, skills, portfolio } =
 <html lang="en" class="web-page">
 	<BaseHead title={title} description={description} author={author} />
 	<body>
-		<Navigation client:only="react" skills={skills} portfolio={portfolio} />
+		<Navigation client:only="react" />
 		<main>
 			<slot />
 			<ThemeSwitcher />
