@@ -63,7 +63,12 @@ html {
   cursor: pointer;
   transition: all 500ms ease;
 }
-.header .nav-container .desktop-nav .desktop-navItems li .desktop-navLink:hover {
+.header
+  .nav-container
+  .desktop-nav
+  .desktop-navItems
+  li
+  .desktop-navLink:hover {
   color: var(--light-grey-color);
 }
 @media (min-width: 800px) {
@@ -95,7 +100,9 @@ html {
 .header .mobile-nav .display-mobile-nav {
   display: flex;
   opacity: 1;
-  transition: opacity 1s, display 1s;
+  transition:
+    opacity 1s,
+    display 1s;
   flex-direction: column;
   align-items: center;
   padding-top: var(--space-12);
@@ -113,4 +120,4 @@ html {
 
 .header.dark {
   background-color: var(--dark-purple-color);
-}/*# sourceMappingURL=navigation.css.map */
+} /*# sourceMappingURL=navigation.css.map */

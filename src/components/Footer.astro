@@ -2,6 +2,17 @@
 const { scrollToTop } = Astro.props;
 ---
 
+<style>
+	body {
+		font-family: "Inter", sans-serif;
+	}
+
+	.dark {
+		background-color: var(--darker-purple-color);
+	}
+</style>
+
+<!-- TailwindCSS styles used here -->
 <footer
 	class="footer tagline bg-[#1a113d] flex flex-col justify-center"
 	id="footer"
@@ -31,13 +42,3 @@ const { scrollToTop } = Astro.props;
 		</small>
 	</div>
 </footer>
-
-<style>
-	body {
-		font-family: "Inter", sans-serif;
-	}
-
-	.dark {
-		background-color: var(--darker-purple-color);
-	}
-</style>
