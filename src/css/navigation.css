@@ -9,7 +9,7 @@ html {
 }
 
 .header {
-  background-color: var(--mid-dark-green-color);
+  background-color: var(--mid-dark-purple-color);
   padding: 1rem 0;
   width: 100%;
   position: fixed;
@@ -98,7 +98,7 @@ html {
   transition: opacity 1s, display 1s;
   flex-direction: column;
   align-items: center;
-  padding-top: 13%;
+  padding-top: var(--space-12);
   height: 100vh;
 }
 .header .mobile-nav .display-mobile-nav li {
@@ -112,5 +112,5 @@ html {
 }
 
 .header.dark {
-  background-color: var(--dark-green-color);
+  background-color: var(--dark-purple-color);
 }/*# sourceMappingURL=navigation.css.map */

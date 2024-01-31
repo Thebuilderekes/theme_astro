@@ -43,7 +43,7 @@ const portfolioCards = [
 		technology: " CSS, Bootstrap, Javascript",
 		description:
 			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-			alt: " screenshot of web site",
+		alt: " screenshot of web site",
 		animation: " card animate__animated animate__fadeInUp",
 		webUrl: "#",
 		gitUrl: "https://github.com/",
@@ -65,7 +65,7 @@ const portfolioCards = [
 		technology: " CSS, Javascript",
 		description:
 			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-			alt: " screenshot of web site",
+		alt: " screenshot of web site",
 		animation: "card animate__animated animate__fadeInUp",
 		webUrl: "#",
 		gitUrl: "https://github.com/",
@@ -74,7 +74,6 @@ const portfolioCards = [
 ---
 
 <style>
-
 	/* PORTFOLIO SECTION STYLES*/
 
 	.portfolio-section {
@@ -84,7 +83,7 @@ const portfolioCards = [
 	}
 
 	.portfolio-section.dark {
-		background-color: var(--darker-green-color);
+		background-color: var(--darker-purple-color);
 	}
 	@media (max-width: 800px) {
 		.portfolio-section {
@@ -95,7 +94,7 @@ const portfolioCards = [
 	h2 {
 		font-size: var(--fs-section-mobile);
 		font-weight: 700;
-		color: var(--darker-green-color);
+		color: var(--darker-purple-color);
 		text-align: center;
 	}
 
@@ -132,11 +131,10 @@ const portfolioCards = [
 			0 1px 2px rgba(0, 0, 0, 0.24);
 	}
 
-	
-	 .card.dark {
-		 background: var(--dark-green-color);
-		 color: var(--light-grey-color); 
-	} 
+	.card.dark {
+		background: var(--dark-purple-color);
+		color: var(--light-grey-color);
+	}
 
 	.animate__animated.animate__fadeInUp {
 		--animate-duration: 2s;
@@ -181,24 +179,24 @@ const portfolioCards = [
 		display: flex;
 	}
 
-	.portfolio-section  a {
+	.portfolio-section a {
 		font-weight: 600;
 		padding: 5px 10px;
 		text-decoration: none;
 		font-size: var(--fs-semi-medium);
-		background-color: var(--darker-green-color);
+		background-color: var(--darker-purple-color);
 		border: 1px solid transparent;
 		color: #ffffff;
 		border-radius: 10px;
 	}
-	.portfolio-section  a:hover {
+	.portfolio-section a:hover {
 		background-color: var(--light-grey-color);
 		color: var(--accent-color);
 		border-color: var(--accent-color);
 	}
 
 	@media (max-width: 900px) {
-		.portfolio-section  a {
+		.portfolio-section a {
 			font-size: 1rem;
 		}
 	}

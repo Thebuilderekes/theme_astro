@@ -13,11 +13,10 @@ img {
 
 :root {
 	/*font sizing*/
-	--fs-extralarge: 7rem; /*80px*/
+	--fs-extra-large: 7rem; /*80px*/
 	--fs-large: 4rem; /*48px*/
 	--fs-semi-large: 3rem; /*48px*/
 	--fs-double: 2rem; /*32px*/
-
 	--fs-text-mobile: 1.875rem; /*30px*/
 	--fs-section-mobile: 1.9rem; /*30.4px*/
 	--fs-medium: 1.7rem; /*27.2px*/
@@ -29,11 +28,26 @@ img {
 	/*colors*/
 	--dark-grey-color: #b9b9b9;
 	--light-grey-color: #d4d4d4;
-	--darker-green-color: #0b022b;
-	--dark-green-color: #140938;
-	--mid-dark-green-color: #1a113d;
-	--light-green-color: #25195c;
-	--accent-color: var(--light-green-color);
+	--darker-purple-color: #0b022b;
+	--dark-purple-color: #140938;
+	--mid-dark-purple-color: #1a113d;
+	--light-purple-color: #25195c;
+	--accent-color: var(--light-purple-color);
+
+	/* spacing */
+	--space-1: 1%;
+	--space-2: 2%;
+	--space-3: 3%;
+	--space-5: 5%;
+	--space-7: 7%;
+	--space-10: 10%;
+	--space-12: 12%;
+	--space-15: 15%;
+	--space-20: 20%;
+	--space-25: 25%;
+	--space-30: 30%;
+	--space-45: 45%;
+	--space-50: 50%;
 }
 
 html {
@@ -75,7 +89,7 @@ body {
 	transition: background-color 0.5s ease-in-out;
 }
 .card.dark {
-	background-color: var(--mid-dark-green-color);
+	background-color: var(--mid-dark-purple-color);
 	color: var(--light-grey-color);
 }
 

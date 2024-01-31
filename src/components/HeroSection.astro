@@ -1,7 +1,7 @@
 <style>
 	/*mobile view*/
 	.hero-section {
-		padding: 15% 2rem;
+		padding: var(--space-15) 2rem;
 		display: flex;
 		height: 100vh;
 		flex-direction: column;
@@ -9,13 +9,13 @@
 	}
 
 	.hero-section.dark {
-		background-color: var(--darker-green-color);
+		background-color: var(--darker-purple-color);
 	}
 
 	/*desktop view*/
 	@media (max-width: 1200px) {
 		.hero-section {
-			padding: 50% 2rem;
+			padding: var(--space-50) 2rem;
 		}
 	}
 
@@ -31,28 +31,28 @@
 		.hero-section {
 			align-items: center;
 
-			padding: 45% 2rem;
+			padding: var(--space-45) 2rem;
 		}
 	}
 
 	@media (max-width: 899px) {
 		.hero-section {
 			text-align: center;
-			padding: 50% 5rem;
+			padding: var(--space-50) 5rem;
 		}
 	}
 
 	/* mobile view*/
 	@media (max-width: 550px) {
 		.hero-section {
-			padding: 25% 2rem;
+			padding: var(--space-25) 2rem;
 			align-items: start;
 			text-align: left;
 		}
 	}
 
 	.hero-section-main-heading {
-		color: var(--dark-green-color);
+		color: var(--dark-purple-color);
 		font-size: var(--fs-text-mobile);
 		font-weight: 600;
 		font-family: "Inter", sans-serif;
@@ -69,9 +69,9 @@
 
 	h2 {
 		padding-bottom: 0.8rem;
-		font-size: var(--fs-extralarge);
+		font-size: var(--fs-extra-large);
 		font-weight: 500;
-		color: var(--mid-dark-green-color);
+		color: var(--mid-dark-purple-color);
 		background-color: transparent;
 		font-family: "Inter", sans-serif;
 		font-weight: 700;
@@ -98,7 +98,7 @@
 		text-align: left;
 		line-height: 1.5;
 		font-size: var(--fs-semi-medium);
-		max-width: 50%;
+		max-width: var(--space-50);
 		margin-bottom: 20px;
 		color: #272727;
 		font-family: "Inter", sans-serif;
@@ -143,18 +143,16 @@
 		.hero-section .cta a {
 			padding: 15px;
 			font-size: 1rem;
-			/* padding: 10px 5px; */
 		}
 	}
 
 	@media (max-width: 375px) {
 		.hero-section .cta a {
 			font-size: 0.9rem;
-			/* padding: 10px 5px; */
 		}
 	}
 	.hero-section .cta a:hover {
-		background: var(--dark-green-color);
+		background: var(--dark-purple-color);
 	}
 
 	.hero-section a:hover {

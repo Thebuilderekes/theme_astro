@@ -39,7 +39,6 @@ const skillCards = [
 		alt: "Terminal logo",
 	},
 
-
 	{
 		icon: "https://api.iconify.design/logos:firebase.svg",
 		animation: "card animate__animated animate__fadeInUp delay-6",
@@ -50,16 +49,15 @@ const skillCards = [
 ---
 
 <style>
-
 	/*SKILL SECTION STYLES*/
 
 	.skills-section {
 		position: relative;
-		background-color: var(--light-green-color);
+		background-color: var(--light-purple-color);
 	}
 
 	.skills-section.dark {
-		background-color: var(--dark-green-color);
+		background-color: var(--dark-purple-color);
 	}
 
 	@media (max-width: 800px) {
@@ -76,8 +74,7 @@ const skillCards = [
 		font-weight: 700;
 		text-align: center;
 	}
-	.skills-section h2.dark {
-		background-color: transparent;
+	.skills-section.dark h2 {
 		color: #d1d1d1;
 	}
 	@media (min-width: 800px) {
@@ -107,7 +104,7 @@ const skillCards = [
 		}
 	}
 	.card {
-          color: var(--dark-green-color);
+		color: var(--dark-purple-color);
 		text-align: center;
 		border-radius: 16px;
 		padding: 0.8rem;
@@ -118,15 +115,15 @@ const skillCards = [
 			0 1px 2px rgba(0, 0, 0, 0.24);
 	}
 
-	 .card.dark {
-		 background: var(--darker-green-color);
-		 color: var(--light-grey-color);
-	} 
+	.card.dark {
+		background: var(--darker-purple-color);
+		color: var(--light-grey-color);
+	}
 
 	.skills-section .card-container .card img {
 		text-align: center;
 		margin: 0 auto;
-	
+
 		width: 100px;
 		height: 100px;
 	}
@@ -135,13 +132,11 @@ const skillCards = [
 		padding-top: 10px;
 		font-family: "Inter", sans-serif;
 		font-size: var(--fs-semi-medium);
-                
-	}    
+	}
 
-       .card.dark h3{
-		
-		 color: var(--light-grey-color);
-	} 
+	.card.dark h3 {
+		color: var(--light-grey-color);
+	}
 
 	@media (max-width: 600px) {
 		.skills-section .card-container .card h3 {
